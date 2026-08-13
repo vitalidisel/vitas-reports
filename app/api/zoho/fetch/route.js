@@ -27,7 +27,7 @@ const ZOHO_SCHEMA_VERSION = 2
 
 // BCureLaser: only count these digital sub-sources
 const DIGITAL_SUBSOURCES = new Set([
-  'facebook', 'google', 'אתר חברה', 'וואטסאפ', 'whatsapp',
+  'facebook', 'google', 'אתר חברה', 'וואטסאפ', 'whatsapp' ,'facebook_minisite','google_minisite'
   'גוגל', 'פייסבוק', // Hebrew variants
 ])
 
