@@ -220,7 +220,14 @@ function Panel() {
     <aside className={s.panel}>
       {/* הקשת האורגנית שחותכת את התמונה */}
       <svg className={s.curve} viewBox="0 0 120 1000" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M120 0H74C40 150 6 300 12 470c6 170 52 300 34 530h74V0Z" fill="var(--lg-cream)" />
+        <defs>
+          {/* אותו מדרג כמו רקע הפאנל, כדי שהקשת תימשך ברצף */}
+          <linearGradient id="lagunaCurve" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="var(--lg-cream-top)" />
+            <stop offset="100%" stopColor="var(--lg-cream)" />
+          </linearGradient>
+        </defs>
+        <path d="M120 0H74C40 150 6 300 12 470c6 170 52 300 34 530h74V0Z" fill="url(#lagunaCurve)" />
       </svg>
 
       <div className={s.panelInner}>

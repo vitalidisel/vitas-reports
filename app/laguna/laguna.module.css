@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Gveret+Levin+AlefAlefAlef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500&family=Gveret+Levin+AlefAlefAlef&display=swap');
 
 /* ============================================================
    LAGUNA טבריה — דף נחיתה
@@ -6,16 +6,16 @@
    ============================================================ */
 
 .page {
-  --lg-cream: #FAF7F1;
-  --lg-cream-2: #F1EADD;
-  --lg-gold: #C4A05A;
-  --lg-gold-soft: #E6D3A7;
-  --lg-gold-grad: linear-gradient(180deg, #E3C888 0%, #C9A45C 55%, #B98F3E 100%);
-  --lg-navy: #17273F;
-  --lg-navy-2: #21344F;
-  --lg-ink: #1B2231;
-  --lg-muted: #5B6476;
-  --lg-panel-w: 44vw;
+  --lg-cream: #F9F6EF;
+  --lg-cream-top: #FFFEFB;
+  --lg-gold: #B99156;
+  --lg-gold-soft: #D7B979;
+  --lg-gold-grad: linear-gradient(90deg, #A97E3E 0%, #E3C77E 50%, #B58A48 100%);
+  --lg-navy: #061E30;
+  --lg-navy-2: #123B56;
+  --lg-ink: #13263A;
+  --lg-muted: #67717A;
+  --lg-panel-w: 46%;
   --lg-script: 'Gveret Levin AlefAlefAlef', 'Segoe Script', cursive;
 
   display: flex;
@@ -24,7 +24,7 @@
   min-height: 100svh;
   background: var(--lg-cream);
   color: var(--lg-ink);
-  font-family: 'Heebo', system-ui, sans-serif;
+  font-family: 'Assistant', 'Heebo', Arial, system-ui, sans-serif;
   overflow-x: hidden;
 }
 
@@ -68,8 +68,8 @@
 /* כיתוב בכתב יד על השמיים */
 .heroScript {
   position: absolute;
-  top: 12%;
-  right: 7%;
+  top: 11%;
+  right: 14%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -113,16 +113,17 @@
 
 .railItem {
   display: block;
-  width: 118px;
-  height: 96px;
+  width: 106px;
+  height: 90px;
   padding: 0;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
   overflow: hidden;
   background: none;
   cursor: pointer;
-  box-shadow: 0 8px 22px rgba(8, 16, 28, 0.35);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  opacity: 0.78;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
 }
 
 .railItem img {
@@ -132,12 +133,13 @@
   display: block;
 }
 
-.railItem:hover { transform: translateY(-2px); }
+.railItem:hover { opacity: 1; transform: translateX(4px); }
 .railItem:focus-visible { outline: 2px solid var(--lg-gold-soft); outline-offset: 3px; }
 
 .railItemActive {
-  border-color: var(--lg-gold);
-  box-shadow: 0 0 0 3px rgba(196, 160, 90, 0.35), 0 10px 24px rgba(8, 16, 28, 0.4);
+  opacity: 1;
+  border-color: var(--lg-gold-soft);
+  box-shadow: 0 0 0 3px rgba(185, 145, 86, 0.4), 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 /* שבב מיקום */
@@ -174,11 +176,11 @@
 .arrow {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  background: rgba(16, 26, 42, 0.28);
+  border: 2px solid rgba(255, 255, 255, 0.92);
+  background: rgba(0, 0, 0, 0.14);
   color: #fff;
   cursor: pointer;
   backdrop-filter: blur(4px);
@@ -187,14 +189,14 @@
 
 .arrow:hover { background: rgba(16, 26, 42, 0.55); }
 .arrow:focus-visible { outline: 2px solid var(--lg-gold-soft); outline-offset: 2px; }
-.arrowIconPrev, .arrowIconNext { width: 20px; height: 20px; }
+.arrowIconPrev, .arrowIconNext { width: 22px; height: 22px; }
 .arrowIconPrev { transform: scaleX(-1); }
 
 .dots { display: flex; align-items: center; gap: 10px; direction: ltr; }
 
 .dot {
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
   padding: 0;
   border: 0;
   border-radius: 50%;
@@ -212,7 +214,7 @@
 .panel {
   position: relative;
   flex: 0 0 var(--lg-panel-w);
-  background: var(--lg-cream);
+  background: linear-gradient(180deg, var(--lg-cream-top) 0%, var(--lg-cream) 100%);
   padding: clamp(18px, 3vh, 40px) clamp(24px, 3.4vw, 56px) clamp(48px, 7vh, 74px);
   display: flex;
   flex-direction: column;
@@ -242,7 +244,7 @@
   margin: 0;
   font-size: clamp(30px, 3.2vw, 48px);
   font-weight: 400;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.19em;
   color: var(--lg-navy);
   font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 }
@@ -260,7 +262,8 @@
   text-align: center;
   font-size: clamp(28px, 3.1vw, 46px);
   font-weight: 800;
-  letter-spacing: -0.01em;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   color: var(--lg-navy);
 }
 
@@ -299,7 +302,7 @@
   gap: 8px;
   padding: 2px 10px;
   text-align: center;
-  border-inline-start: 1px solid rgba(196, 160, 90, 0.35);
+  border-inline-start: 1px solid rgba(185, 145, 86, 0.5);
 }
 
 .feature:last-child { border-inline-start: 0; }
@@ -322,8 +325,8 @@
   position: relative;
   border-radius: 16px;
   padding: clamp(16px, 2vh, 26px) clamp(16px, 1.9vw, 28px) clamp(13px, 1.6vh, 20px);
-  background: linear-gradient(180deg, var(--lg-navy-2) 0%, var(--lg-navy) 100%);
-  box-shadow: 0 22px 50px rgba(18, 32, 52, 0.28);
+  background: linear-gradient(140deg, var(--lg-navy-2) 0%, var(--lg-navy) 100%);
+  box-shadow: 0 18px 50px rgba(6, 30, 48, 0.22);
   color: #fff;
 }
 
@@ -381,7 +384,7 @@
 }
 
 .input::placeholder { color: #98A0AF; font-weight: 400; }
-.input:focus { outline: none; border-color: var(--lg-gold); box-shadow: 0 0 0 3px rgba(196, 160, 90, 0.28); }
+.input:focus { outline: none; border-color: var(--lg-gold); box-shadow: 0 0 0 2px var(--lg-gold); }
 .inputError { border-color: #E2725B; box-shadow: 0 0 0 3px rgba(226, 114, 91, 0.22); }
 
 .fieldError {
@@ -399,15 +402,15 @@
   width: 100%;
   height: clamp(46px, 5.6vh, 53px);
   margin-top: 12px;
-  border: 0;
-  border-radius: 9px;
+  border: 1px solid #F2D28C;
+  border-radius: 8px;
   background: var(--lg-gold-grad);
-  color: #1A2334;
+  color: #111;
   font-family: inherit;
-  font-size: clamp(15px, 1.2vw, 18px);
-  font-weight: 700;
+  font-size: clamp(16px, 1.3vw, 20px);
+  font-weight: 800;
   cursor: pointer;
-  box-shadow: 0 10px 22px rgba(185, 143, 62, 0.35);
+  box-shadow: 0 10px 22px rgba(169, 126, 62, 0.3);
   transition: filter 0.2s ease, transform 0.15s ease;
 }
 
@@ -487,8 +490,9 @@
 /* ============================ רספונסיבי ============================ */
 
 @media (max-width: 1180px) {
-  .page { --lg-panel-w: 48vw; }
-  .railItem { width: 92px; height: 76px; }
+  .page { --lg-panel-w: 48%; }
+  .rail { left: 24px; }
+  .railItem { width: 82px; height: 70px; }
 }
 
 @media (max-width: 900px) {
@@ -525,8 +529,10 @@
 }
 
 @media (max-width: 560px) {
-  .features { grid-template-columns: repeat(2, 1fr); gap: 16px 0; }
-  .feature:nth-child(2n) { border-inline-start: 0; }
+  /* בשתי עמודות משאירים קו הפרדה אחד — בין העמודות בלבד */
+  .features { grid-template-columns: repeat(2, 1fr); gap: 18px 0; }
+  .feature { border-inline-start: 0; }
+  .feature:nth-child(2n) { border-inline-start: 1px solid rgba(185, 145, 86, 0.5); }
   .trust { flex-direction: column; gap: 8px; }
   .trust li + li { border-inline-start: 0; }
   .controls { gap: 12px; }
