@@ -1,0 +1,11 @@
+{
+  "bot_token": "123456789:ABCdefGhIJKlmNoPQRsTUVwxyZ",
+  "allowed_user_ids": [],
+  "download_dir": "C:\\Users\\YOURNAME\\Videos\\Downloads",
+  "folder_per_platform": true,
+  "default_format": "video",
+  "cookies_from_browser": "",
+  "max_filesize_mb": 0,
+  "history_size": 500,
+  "auto_update_ytdlp": true
+}

@@ -4,3 +4,10 @@ node_modules
 
 # QA artifacts של פרויקט הדמו (נוצרים מקומית, לא נכנסים לריפו)
 qa-screenshots/
+
+# video-grabber (רץ מקומית על המחשב, לא בריפו)
+tools/video-grabber/config.json
+tools/video-grabber/bin/
+tools/video-grabber/logs/
+__pycache__/
+*.pyc
