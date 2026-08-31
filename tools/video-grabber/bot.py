@@ -23,6 +23,7 @@ from grabber.downloader import (
     Downloader, Job, MissingYtDlp, detect_platform, duration_text,
     find_urls, human_size,
 )
+from grabber import tags as tagging
 from grabber.telegram import Telegram, TelegramError, escape
 
 log = logging.getLogger("grabber")
@@ -37,6 +38,14 @@ HELP = """<b>מה אפשר לעשות כאן</b>
 עובד עם יוטיוב, יוטיוב שורטס, אינסטגרם, פייסבוק וטיקטוק.
 הכי נוח: בכל אפליקציה → <b>שיתוף</b> → טלגרם → הצ'אט הזה.
 אפשר לשלוח כמה קישורים בהודעה אחת — הם ירדו בזה אחר זה.
+
+<b>קטלוג לפי נושא</b>
+מוסיפים תגית להודעה והסרטון נשמר בתיקייה של הנושא:
+<code>#נדלן https://...</code> → <code>נדלן\Instagram\</code>
+בלי תגית הכול נשמר תחת <code>כללי</code>.
+/tag נדלן — כל מה שיישלח מעכשיו יתויג כך, בלי לכתוב # כל פעם
+/tag off — ביטול. /tag — מה התגית הנוכחית
+/tags — רשימת הנושאים הקיימים וכמה סרטונים בכל אחד
 
 <b>פקודות</b>
 /mp3 &lt;קישור&gt; — להוריד אודיו בלבד (MP3)
@@ -184,12 +193,17 @@ class Bot:
             self.tg.send_message(chat_id, self.history_text())
         elif cmd == "/where":
             base = self.cfg["download_dir"]
-            per = "כן" if self.cfg.get("folder_per_platform", True) else "לא"
+            layout = "&lt;נושא&gt;\\&lt;פלטפורמה&gt;" if self.cfg.get("folder_per_platform", True) else "&lt;נושא&gt;"
+            current = self.cfg.get("default_tag") or f"{tagging.UNTAGGED} (אין תגית קבועה)"
             self.tg.send_message(
                 chat_id,
                 f"📁 הקבצים נשמרים ב:\n<code>{escape(base)}</code>\n"
-                f"תיקייה נפרדת לכל פלטפורמה: {per}",
+                f"מבנה: {layout}\n🏷 תגית נוכחית: {escape(current)}",
             )
+        elif cmd == "/tag":
+            self.tg.send_message(chat_id, self.set_tag(rest.strip()))
+        elif cmd == "/tags":
+            self.tg.send_message(chat_id, self.tags_text())
         elif cmd == "/cookies":
             self.tg.send_message(chat_id, self.set_cookies(rest.strip().lower()))
         elif cmd == "/id":
@@ -198,23 +212,25 @@ class Bot:
             self.tg.send_message(chat_id, "לא מכיר את הפקודה הזו. /help")
 
     def enqueue_urls(self, chat_id, user_id, text, mode):
-        urls = find_urls(text)
+        urls = find_urls(tagging.strip_tags(text))
         if not urls:
             self.tg.send_message(chat_id, "לא מצאתי קישור בהודעה. שלח/י קישור לסרטון, או /help.")
             return
+        found = tagging.extract(text)
+        tag = found[0] if found else self.cfg.get("default_tag", "")
         for url in urls:
-            job = Job(url=url, chat_id=chat_id, user_id=user_id, mode=mode)
+            job = Job(url=url, chat_id=chat_id, user_id=user_id, mode=mode, tag=tag)
             job.platform = detect_platform(url)
             waiting = self.queue.qsize() + (1 if self.current else 0)
             kind = "🎵 MP3" if mode == "audio" else "🎬 וידאו"
             position = f"\nבתור: מקום {waiting}" if waiting else ""
             job.message_id = self.tg.send_message(
                 chat_id,
-                f"⏳ התקבל — {escape(job.platform[1])} · {kind}\n"
+                f"⏳ התקבל — {escape(job.platform[1])} · {kind} · 🏷 {escape(tag or tagging.UNTAGGED)}\n"
                 f"<code>{escape(url)}</code>{position}",
             )
             self.queue.put(job)
-            log.info("נוסף לתור: %s (%s)", url, mode)
+            log.info("נוסף לתור: %s (%s, תגית: %s)", url, mode, tag or tagging.UNTAGGED)
 
     # ---------- פקודות מידע ----------
 
@@ -272,6 +288,42 @@ class Bot:
                 out.append(f"❌ {when} · {escape(item.get('platform', ''))}\n{escape(item.get('error', ''))}")
         return "\n\n".join(out)
 
+    def set_tag(self, value: str) -> str:
+        """/tag קובע תגית דביקה — כדי לא לכתוב # בכל שיתוף מהטלפון."""
+        current = self.cfg.get("default_tag", "")
+        if not value:
+            if current:
+                return (f"🏷 התגית הקבועה: <b>{escape(current)}</b>\n"
+                        "לשינוי: <code>/tag נושא אחר</code> · לביטול: <code>/tag off</code>")
+            return ("אין כרגע תגית קבועה — הכול נשמר תחת "
+                    f"<b>{tagging.UNTAGGED}</b>.\nלקביעה: <code>/tag נדלן</code>")
+        if value.lower() in ("off", "none", "בטל", "ביטול"):
+            self.cfg["default_tag"] = ""
+            config.save(self.cfg)
+            return f"התגית הקבועה בוטלה. מעכשיו הכול נשמר תחת <b>{tagging.UNTAGGED}</b>."
+        tag = tagging.safe_folder(value)
+        if not tag:
+            return "השם הזה לא יכול לשמש כשם תיקייה. נסה/י משהו אחר."
+        self.cfg["default_tag"] = tag
+        config.save(self.cfg)
+        return (f"🏷 מעכשיו הכול נשמר תחת <b>{escape(tag)}</b>.\n"
+                "אפשר תמיד לעקוף עם תגית בהודעה עצמה: <code>#נושא_אחר קישור</code>")
+
+    def tags_text(self) -> str:
+        """הנושאים הקיימים בפועל על הדיסק — כדי לשמור על שמות עקביים."""
+        base = Path(self.cfg["download_dir"])
+        try:
+            folders = sorted(p for p in base.iterdir() if p.is_dir())
+        except OSError:
+            return "עוד אין תיקיות — התגית הראשונה תיצור אחת."
+        if not folders:
+            return "עוד אין נושאים. שלח/י <code>#נושא קישור</code> והתיקייה תיווצר לבד."
+        lines = ["<b>הנושאים הקיימים</b>"]
+        for folder in folders:
+            count = sum(1 for f in folder.rglob("*") if f.is_file() and not f.name.endswith(".part"))
+            lines.append(f"🏷 {escape(folder.name)} — {count}")
+        return "\n".join(lines)
+
     def set_cookies(self, value: str) -> str:
         allowed = ("chrome", "edge", "firefox", "brave", "opera", "vivaldi", "safari")
         if value in ("off", "none", ""):
@@ -312,7 +364,8 @@ class Bot:
     def process(self, job: Job):
         last_edit = [0.0]
         last_percent = [-100.0]
-        header = f"{escape(job.platform[1])} · {'🎵 MP3' if job.mode == 'audio' else '🎬 וידאו'}"
+        header = (f"{escape(job.platform[1])} · {'🎵 MP3' if job.mode == 'audio' else '🎬 וידאו'}"
+                  f" · 🏷 {escape(job.tag or tagging.UNTAGGED)}")
 
         def on_progress(stage, percent):
             # טלגרם חוסם עריכות תכופות, ולכן מעדכנים לאט: לא יותר מפעם ב-3 שניות
@@ -368,7 +421,8 @@ class Bot:
     def write_history(self, job: Job, ok: bool, path="", title="", error=""):
         record = {
             "at": time.time(), "url": job.url, "platform": job.platform[1],
-            "mode": job.mode, "ok": ok, "path": path, "title": title, "error": error,
+            "tag": job.tag or tagging.UNTAGGED, "mode": job.mode,
+            "ok": ok, "path": path, "title": title, "error": error,
         }
         try:
             config.LOG_DIR.mkdir(parents=True, exist_ok=True)

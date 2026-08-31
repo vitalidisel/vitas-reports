@@ -115,6 +115,7 @@ $cfg = [ordered]@{
     download_dir        = $dir
     folder_per_platform = $true
     default_format      = 'video'
+    default_tag         = [string]$existing.default_tag
     cookies_from_browser = [string]$existing.cookies_from_browser
     max_filesize_mb     = 0
     history_size        = 500

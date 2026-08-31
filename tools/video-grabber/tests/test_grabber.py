@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from grabber import config, downloader  # noqa: E402
+from grabber import config, downloader, tags as tagging  # noqa: E402
 from grabber.downloader import Downloader, Job, detect_platform, find_urls  # noqa: E402
 
 FAKE = str(ROOT / "tests" / "fake_ytdlp.py")
@@ -27,8 +27,8 @@ def make_cfg(tmpdir, **over):
     return cfg
 
 
-def make_job(url="https://www.youtube.com/watch?v=abc", mode="video"):
-    job = Job(url=url, chat_id=1, user_id=2, mode=mode, message_id=10)
+def make_job(url="https://www.youtube.com/watch?v=abc", mode="video", tag=""):
+    job = Job(url=url, chat_id=1, user_id=2, mode=mode, message_id=10, tag=tag)
     job.platform = detect_platform(url)
     return job
 
@@ -67,6 +67,23 @@ class TestParsing(unittest.TestCase):
         self.assertEqual(downloader.duration_text(None), "")
 
 
+class TestTags(unittest.TestCase):
+    def test_safe_folder(self):
+        self.assertEqual(tagging.safe_folder('נדל"ן'), "נדלן")
+        self.assertEqual(tagging.safe_folder("רכב-יוקרה"), "רכב-יוקרה")
+        self.assertEqual(tagging.safe_folder("a/b:c"), "a-b-c")
+        self.assertEqual(tagging.safe_folder("con"), "con-tag")     # שם שמור בווינדוס
+        self.assertEqual(tagging.safe_folder(".."), "")             # אין יציאה מהתיקייה
+        self.assertEqual(tagging.safe_folder("../../etc"), "etc")
+        self.assertEqual(tagging.safe_folder(""), "")
+        self.assertLessEqual(len(tagging.safe_folder("x" * 200)), 60)
+
+    def test_extract_and_strip(self):
+        self.assertEqual(tagging.extract("#נדלן #רכב https://x/y #נדלן"), ["נדלן", "רכב"])
+        self.assertEqual(tagging.extract("בלי תגיות"), [])
+        self.assertEqual(tagging.strip_tags("#נדלן https://x/y").strip(), "https://x/y")
+
+
 class TestCommand(unittest.TestCase):
     def test_video_command(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -76,7 +93,8 @@ class TestCommand(unittest.TestCase):
             self.assertEqual(cmd[cmd.index("--merge-output-format") + 1], "mp4")
             self.assertEqual(cmd[cmd.index("--max-filesize") + 1], "500M")
             self.assertEqual(cmd[cmd.index("--cookies-from-browser") + 1], "chrome")
-            self.assertEqual(cmd[cmd.index("-P") + 1], os.path.join(tmp, "YouTube"))
+            self.assertEqual(cmd[cmd.index("-P") + 1],
+                             os.path.join(tmp, tagging.UNTAGGED, "YouTube"))
             self.assertEqual(cmd[-1], "https://www.youtube.com/watch?v=abc")
 
     def test_audio_command(self):
@@ -92,8 +110,14 @@ class TestCommand(unittest.TestCase):
     def test_flat_folder(self):
         with tempfile.TemporaryDirectory() as tmp:
             dl = Downloader(make_cfg(tmp, folder_per_platform=False))
-            cmd = dl.build_command(make_job(), "/tmp/meta.txt")
-            self.assertEqual(cmd[cmd.index("-P") + 1], tmp)
+            cmd = dl.build_command(make_job(tag="נדלן"), "/tmp/meta.txt")
+            self.assertEqual(cmd[cmd.index("-P") + 1], os.path.join(tmp, "נדלן"))
+
+    def test_tag_is_the_top_folder(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            dl = Downloader(make_cfg(tmp))
+            cmd = dl.build_command(make_job(tag="רכב"), "/tmp/meta.txt")
+            self.assertEqual(cmd[cmd.index("-P") + 1], os.path.join(tmp, "רכב", "YouTube"))
 
 
 class TestDownload(unittest.TestCase):
@@ -114,7 +138,7 @@ class TestDownload(unittest.TestCase):
         self.assertAlmostEqual(result.duration, 95.4)
         self.assertEqual(result.size, 1024 * 1024)
         self.assertTrue(os.path.exists(result.path))
-        self.assertEqual(Path(result.path).parent, Path(tmp) / "YouTube")
+        self.assertEqual(Path(result.path).parent, Path(tmp) / tagging.UNTAGGED / "YouTube")
         self.assertTrue(any(p >= 100 for _, p in events), events)
 
     def test_error_is_reported(self):
@@ -210,6 +234,37 @@ class TestBotFlow(unittest.TestCase):
         self.bot.process(self.bot.queue.get())
         self.assertIn("/cookies chrome", self.tg.edits[-1])
         self.assertFalse(json.loads(config.HISTORY_PATH.read_text(encoding="utf-8").strip())["ok"])
+
+    def test_hashtag_sets_folder(self):
+        self.bot.handle_update(self.update("#נדלן https://youtu.be/a"))
+        job = self.bot.queue.get()
+        self.assertEqual(job.tag, "נדלן")
+        self.bot.process(job)
+        self.assertIn("נדלן", self.tg.edits[-1])
+        record = json.loads(config.HISTORY_PATH.read_text(encoding="utf-8").strip())
+        self.assertEqual(record["tag"], "נדלן")
+        self.assertIn(os.path.join("נדלן", "YouTube"), record["path"])
+
+    def test_sticky_tag_applies_and_hashtag_overrides(self):
+        original = config.CONFIG_PATH
+        config.CONFIG_PATH = Path(self.tmp) / "config.json"
+        try:
+            self.bot.handle_update(self.update("/tag רכב"))
+            self.assertEqual(self.cfg["default_tag"], "רכב")
+            self.bot.handle_update(self.update("https://youtu.be/a"))
+            self.assertEqual(self.bot.queue.get().tag, "רכב")
+            self.bot.handle_update(self.update("#קמעונאות https://youtu.be/b"))
+            self.assertEqual(self.bot.queue.get().tag, "קמעונאות")
+            self.bot.handle_update(self.update("/tag off"))
+            self.bot.handle_update(self.update("https://youtu.be/c"))
+            self.assertEqual(self.bot.queue.get().tag, "")
+        finally:
+            config.CONFIG_PATH = original
+
+    def test_tags_listing(self):
+        (Path(self.tmp) / "נדלן" / "YouTube").mkdir(parents=True)
+        (Path(self.tmp) / "נדלן" / "YouTube" / "a.mp4").write_bytes(b"x")
+        self.assertIn("נדלן — 1", self.bot.tags_text())
 
     def test_two_urls_two_jobs(self):
         self.bot.handle_update(self.update("https://youtu.be/a https://youtu.be/b"))

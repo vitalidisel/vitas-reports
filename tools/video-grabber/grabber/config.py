@@ -24,6 +24,8 @@ DEFAULTS = {
     "folder_per_platform": True,
     # "video" (MP4 באיכות מקסימלית) או "audio" (MP3)
     "default_format": "video",
+    # תגית נושא שתחול על כל מה שנשלח בלי #תגית (נקבעת מהטלפון עם /tag)
+    "default_tag": "",
     # "" | "chrome" | "edge" | "firefox" | "brave" — לקוקיז מהדפדפן (תוכן שדורש התחברות)
     "cookies_from_browser": "",
     # 0 = בלי הגבלה. אחרת דילוג על קבצים גדולים מ-X מגה

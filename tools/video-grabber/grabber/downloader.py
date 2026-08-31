@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from . import config
+from .tags import UNTAGGED
 
 log = logging.getLogger("grabber.downloader")
 
@@ -70,6 +71,7 @@ class Job:
     chat_id: int
     user_id: int
     mode: str = "video"           # "video" | "audio"
+    tag: str = ""                 # נושא/ענף — קובע את תיקיית העל
     message_id: int = None        # הודעת הסטטוס שמתעדכנת בטלגרם
     platform: tuple = None
     created_at: float = field(default_factory=time.time)
@@ -174,7 +176,8 @@ class Downloader:
     # ---- הורדה ----
 
     def target_dir(self, job: Job) -> Path:
-        base = Path(self.cfg["download_dir"])
+        """<תיקיית ההורדות>\<נושא>\<פלטפורמה>"""
+        base = Path(self.cfg["download_dir"]) / (job.tag or UNTAGGED)
         if self.cfg.get("folder_per_platform", True):
             base = base / job.platform[2]
         return base
