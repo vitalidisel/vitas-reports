@@ -4,3 +4,6 @@ node_modules
 
 # QA artifacts של פרויקט הדמו (נוצרים מקומית, לא נכנסים לריפו)
 qa-screenshots/
+
+# פלט סריקות אתרים (scripts/site-scan)
+site-scan-output/
