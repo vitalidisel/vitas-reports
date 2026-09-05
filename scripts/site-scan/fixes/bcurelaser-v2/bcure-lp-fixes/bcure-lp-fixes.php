@@ -17,6 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** מזהי הדפים שהתוסף פועל עליהם (page-id מה-body class). */
 const BCURE_LP_PAGE_IDS = array( 15964 );
 
+/** בנוסף: כל דף שה-slug שלו מתחיל באחת מהתחיליות האלה (מכסה עותקים כמו bcurelaser-v2-copy / bcurelaser-v3). */
+const BCURE_LP_SLUG_PREFIXES = array( 'bcurelaser-v' );
+
 /** טלפון לחיוג בפס הדביק במובייל. ריק = לא מוסיפים כפתור. דוגמה: '03-1234567' */
 const BCURE_LP_PHONE = '';
 
@@ -41,7 +44,19 @@ const BCURE_LP_HIDE_COOKIE_WHILE_POPUP = true;
 /* ───────────────────────── מכאן לא צריך לגעת ───────────────────────── */
 
 function bcure_lp_is_lp() {
-	return is_page( BCURE_LP_PAGE_IDS );
+	if ( ! is_page() ) {
+		return false;
+	}
+	if ( is_page( BCURE_LP_PAGE_IDS ) ) {
+		return true;
+	}
+	$slug = (string) get_post_field( 'post_name', get_queried_object_id() );
+	foreach ( BCURE_LP_SLUG_PREFIXES as $prefix ) {
+		if ( $prefix && 0 === strpos( $slug, $prefix ) ) {
+			return true;
+		}
+	}
+	return false;
 }
 
 /** מספר טלפון ישראלי → tel:+972… */
