@@ -35,7 +35,7 @@ const BCURE_LP_DESCRIPTION = 'מכשיר לייזר קר ביתי לטיפול �
 /** תמונת שיתוף 1200×630. ריק = משתמשים בתמונה המומלצת של הדף אם קיימת. */
 const BCURE_LP_OG_IMAGE = '';
 
-/** H1 מוסתר-ויזואלית עם טקסט ה-hero (פתרון ביניים עד שהכותרת תהפוך לטקסט אמיתי באלמנטור). '' = לא מוסיפים. */
+/** H1 מוסתר-ויזואלית עם טקסט ה-hero — נוסף רק אם בדף אין H1 בכלל (הגרסה המתוקנת של הדף כבר כוללת H1 אמיתי). '' = לא מוסיפים. */
 const BCURE_LP_SR_H1 = 'הטכנולוגיה החדשנית לטיפול בכאבים — B-Cure Laser Pro, 30 ימי התנסות בהחזר כספי מלא';
 
 /** להסתיר את באנר העוגיות כל עוד הפופאפ פתוח (כדי שהבאנר לא יכסה את טופס הפופאפ במובייל). */
@@ -115,12 +115,6 @@ add_filter( 'wp_get_attachment_image_attributes', function ( $attr, $attachment 
 	return $attr;
 }, 10, 2 );
 
-/* 4. H1 מוסתר-ויזואלית (פתרון ביניים) */
-add_action( 'wp_body_open', function () {
-	if ( bcure_lp_is_lp() && BCURE_LP_SR_H1 ) {
-		printf( '<h1 class="bcure-sr-only">%s</h1>', esc_html( BCURE_LP_SR_H1 ) );
-	}
-} );
 
 /* 5. CSS + JS בצד הלקוח */
 add_action( 'wp_enqueue_scripts', function () {
@@ -138,6 +132,7 @@ add_action( 'wp_enqueue_scripts', function () {
 		'telLabel'        => BCURE_LP_PHONE,
 		'wa'              => BCURE_LP_WHATSAPP ? 'https://wa.me/' . preg_replace( '/\D+/', '', BCURE_LP_WHATSAPP ) . '?text=' . rawurlencode( BCURE_LP_WHATSAPP_TEXT ) : '',
 		'hideCookieWhilePopup' => BCURE_LP_HIDE_COOKIE_WHILE_POPUP,
+		'srH1'            => BCURE_LP_SR_H1,
 	) ) . ';', 'before' );
 	wp_add_inline_script( 'bcure-lp-fixes', bcure_lp_js() );
 }, 100 );
@@ -191,6 +186,12 @@ function bcure_lp_js() {
 	return <<<'JS'
 (function(){
   var cfg = window.BCURE_LP || {};
+
+  /* --- H1 מוסתר רק אם אין H1 אמיתי בדף (הדף הישן) --- */
+  if (cfg.srH1 && !document.querySelector('h1')) {
+    var h = document.createElement('h1'); h.className = 'bcure-sr-only'; h.textContent = cfg.srH1;
+    document.body.insertBefore(h, document.body.firstChild);
+  }
 
   /* --- autocomplete בטפסים --- */
   document.querySelectorAll('input[name="form_fields[name]"]').forEach(function(i){ i.setAttribute('autocomplete','name'); });
