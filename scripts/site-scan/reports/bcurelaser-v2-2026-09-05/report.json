@@ -1,0 +1,4715 @@
+[
+  {
+    "viewport": "mobile-iphone",
+    "mobile": true,
+    "status": 200,
+    "loadMs": 33139,
+    "consoleErrors": [
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Google Tag Manager container code placement set to OFF !!!"
+      },
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      }
+    ],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/rmkt/collect/18020169982/?random=1788624198539&cv=11&fst=1788624198539&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9246445133za200zd9246445133xec&gcd=13l3l3l3l1l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=1&auid=927026427.1788624199&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=927026427.1788624199&gtm=45be6921v9246445133za200zd9246445133xec&fmt=8",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/17762794865/?random=1788624198595&cv=11&fst=1788624198595&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9237125338za200zb9246445133zd9246445133xec&gcd",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=0&auid=927026427.1788624199&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=0&ae=g&auid=927026427.1788624199&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=0&ae=g&auid=927026427.1788624199&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/969150324/?random=1788624199246&cv=11&fst=1788624199246&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6921v889460777z89170425046za20gzb9170425046zd9170425046xea&gcd=13l3l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624197627&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&are=1&cid=",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624197627&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=1779494",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://trc.taboola.com/sg/google-authorized-buyers/1/um?gdpr=0&gdpr_consent=&ui=78d79fc1-1478-4e43-9079-d3123a16a35a-tuct1195c2c7&google_error=3",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      },
+      {
+        "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=42A7C45C6A884800B15372F5326841D6&RedC=c.clarity.ms&MXFR=3B758E0A28E266721F5399C12CE2681A",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      }
+    ],
+    "responses4xx5xx": [],
+    "dom": {
+      "vw": 390,
+      "vh": 664,
+      "scale": 1,
+      "zoomedOut": false,
+      "scrollW": 390,
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "el": "<div.elementor-element.elementor-element-fae947e.elementor-align-center> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-3e4b696.elementor-align-center> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -311,
+          "docRight": 701,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div#swiper-wrapper-52c1df9410eddbc22.swiper-wrapper>",
+          "docLeft": -1098,
+          "docRight": 1110,
+          "width": 2208,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"4 / 4\"",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18030>",
+          "docLeft": 752,
+          "docRight": 1110,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 911,
+          "docRight": 951,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 911,
+          "docRight": 951,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 912,
+          "docRight": 950,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"1 / 4\"",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18033>",
+          "docLeft": 384,
+          "docRight": 742,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 543,
+          "docRight": 583,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 543,
+          "docRight": 583,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 544,
+          "docRight": 582,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"3 / 4\"",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": -352,
+          "docRight": 6,
+          "width": 358,
+          "selfWide": false
+        }
+      ],
+      "smallText": [],
+      "smallTargets": [
+        {
+          "el": "<a#zc-decline.zcb-button.zcb-button-secondary> \"Deny\"",
+          "w": 73,
+          "h": 32
+        },
+        {
+          "el": "<a#zc-manage.zcb-button.zcb-button-primary> \"Accept\"",
+          "w": 85,
+          "h": 32
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<a> \"תנאי שימוש\"",
+          "w": 59,
+          "h": 18
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות\"",
+          "w": 77,
+          "h": 18
+        },
+        {
+          "el": "<a.dialog-close-button.dialog-lightbox-close-button> \"Close\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-name.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 138,
+          "h": 33
+        },
+        {
+          "el": "<input#form-field-phone.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 138,
+          "h": 33
+        }
+      ],
+      "images": [
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Desktop.png-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F-1536x560.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "390x142",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Tablet-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F.png",
+          "alt": "",
+          "displayed": "390x520",
+          "natural": "390x520",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/icons.png",
+          "alt": "",
+          "displayed": "358x74",
+          "natural": "389x80",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/DSC0141-1.jpg",
+          "alt": "",
+          "displayed": "390x259",
+          "natural": "390x258",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "358x358",
+          "natural": "390x219",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/mdnet.png",
+          "alt": "mdnet",
+          "displayed": "67x100",
+          "natural": "743x421",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/logo-hebrew-1-e1770638589101.png",
+          "alt": "logo-hebrew-1",
+          "displayed": "67x100",
+          "natural": "548x699",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/Be-Pharm-Logo.png",
+          "alt": "Be-Pharm-Logo",
+          "displayed": "67x100",
+          "natural": "1665x1292",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/%D7%9E%D7%9B%D7%91%D7%99-%D7%A4%D7%90%D7%A8%D7%9D-%D7%9C%D7%95%D7%92%D7%95-e1770638643393.webp",
+          "alt": "מכבי-פארם-לוגו",
+          "displayed": "67x100",
+          "natural": "1313x280",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/elementor/thumbs/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342-rft519ka88zsf76rt4i7zgfp74ochqnfjohh3c2u40.p",
+          "alt": "Good Energies B-Cure Laser Pro-110 (1)",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-desktop.jpg",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "390x270",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-mobile.jpg",
+          "alt": "",
+          "displayed": "312x488",
+          "natural": "390x609",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        }
+      ],
+      "forms": [
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        }
+      ],
+      "looseFields": [],
+      "links": 16,
+      "deadLinks": [
+        {
+          "href": "",
+          "text": "Deny",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "Accept",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "איך בי-קיור לייזר בהשוואה למכשירים אחרים בשוק?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם נדרש אמצעי בטיחות כלשהם על מנת להשתמש בבי-קיור לייזר?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם היעילות של בי-קיור לייזר הוכחה קלינית?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם הטיפול בבי-קיור לייזר בטוח לשימוש?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "#",
+          "text": "Close",
+          "target": "",
+          "visible": true
+        }
+      ],
+      "telLinks": [],
+      "waLinks": [],
+      "fixed": [
+        {
+          "el": "<div#zcb-banner.zcb-bar.zcb-banner-bottom> \"Our website uses cookies to give you the best and \"",
+          "pos": "fixed",
+          "w": 390,
+          "h": 146,
+          "top": 518,
+          "coverage": 22
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-82bb3c7.elementor-fixed> \"לפרטים נוספים ורכישה\"",
+          "pos": "fixed",
+          "w": 390,
+          "h": 44,
+          "top": 610,
+          "coverage": 7
+        },
+        {
+          "el": "<div#elementor-popup-modal-19547.dialog-widget.dialog-lightbox-widget.dialog-type-buttons> \"name phone לקבלת הטבה >>\"",
+          "pos": "fixed",
+          "w": 390,
+          "h": 664,
+          "top": 0,
+          "coverage": 100
+        },
+        {
+          "el": "<button#wpfront-scroll-top-container.show>",
+          "pos": "fixed",
+          "w": 40,
+          "h": 40,
+          "top": 559,
+          "coverage": 1
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "יותר מ-350,000 מכשירים נמכרו ברחבי העולם!",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "מה זה בי-קיור לייזר?",
+          "visible": false
+        },
+        {
+          "tag": "H2",
+          "text": "מומחים ממליצים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "סיפורי הצלחה",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "ספקים מורשים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "שאלות ותשובות",
+          "visible": true
+        }
+      ],
+      "meta": {
+        "title": "25 bcurelaser – Dec sale – בי קיור לייזר",
+        "description": null,
+        "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+        "lang": "he-IL",
+        "dir": "rtl",
+        "canonical": "https://lp.bcurelaser.co.il/bcurelaser-v2/",
+        "favicon": true,
+        "ogImage": null,
+        "h1Count": 0,
+        "iframes": [],
+        "videos": 1,
+        "autoplayVideos": 1
+      },
+      "pageHeight": 5510,
+      "screens": 8.3
+    },
+    "perf": {
+      "domContentLoaded": 3323,
+      "load": 18132,
+      "ttfb": 2001,
+      "requests": 166,
+      "transferKB": 7573,
+      "byType": {
+        "document": {
+          "count": 1,
+          "bytes": 185368
+        },
+        "stylesheet": {
+          "count": 34,
+          "bytes": 515748
+        },
+        "script": {
+          "count": 65,
+          "bytes": 4867550
+        },
+        "image": {
+          "count": 31,
+          "bytes": 1437930
+        },
+        "font": {
+          "count": 6,
+          "bytes": 188896
+        },
+        "media": {
+          "count": 1,
+          "bytes": 552911
+        },
+        "fetch": {
+          "count": 17,
+          "bytes": 6513
+        },
+        "ping": {
+          "count": 2,
+          "bytes": 42
+        },
+        "xhr": {
+          "count": 13,
+          "bytes": 4
+        }
+      },
+      "lcp": 3124,
+      "cls": 0,
+      "thirdParty": [
+        "www.googletagmanager.com",
+        "crm.zoho.com",
+        "connect.facebook.net",
+        "googleads.g.doubleclick.net",
+        "www.google.com",
+        "ad.doubleclick.net",
+        "amplify.outbrain.com",
+        "www.clarity.ms",
+        "s3.eu-central-1.amazonaws.com",
+        "cdn.pagesense.io",
+        "cdn.taboola.com",
+        "www.facebook.com",
+        "analytics.google.com",
+        "stats.g.doubleclick.net",
+        "scripts.clarity.ms",
+        "www.googleadservices.com",
+        "trc.taboola.com",
+        "wave.outbrain.com",
+        "tr.outbrain.com",
+        "pagesense-collect.zoho.com",
+        "static.zohocdn.com",
+        "cm.g.doubleclick.net",
+        "b.clarity.ms",
+        "pips.taboola.com",
+        "cds.taboola.com",
+        "trc-events.taboola.com",
+        "c.clarity.ms"
+      ],
+      "viaNode": true
+    },
+    "screenshots": [
+      "screenshots/mobile-iphone-fold.png",
+      "screenshots/mobile-iphone-full.png"
+    ]
+  },
+  {
+    "viewport": "mobile-android",
+    "mobile": true,
+    "status": 200,
+    "loadMs": 32476,
+    "consoleErrors": [
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Google Tag Manager container code placement set to OFF !!!"
+      },
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      }
+    ],
+    "failedRequests": [
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=965546244.1788624238&gtm=45be6921v9237125338za200zd9237125338xec&fmt=8",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=15&frm=0&apvc=1&auid=965546244.1788624238&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/17762794865/?random=1788624238245&cv=11&fst=1788624238245&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9237125338za200zd9237125338xec&gcd=13l3l3l3l1l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=0&auid=965546244.1788624238&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/18020169982/?random=1788624238311&cv=11&fst=1788624238311&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9246445133za200zb9237125338zd9237125338xec&gcd",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=16&frm=0&apvc=0&ae=g&auid=965546244.1788624238&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=0&ae=g&auid=965546244.1788624238&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/969150324/?random=1788624238975&cv=11&fst=1788624238975&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6921v889460777z89170425046za20gzb9170425046zd9170425046xea&gcd=13l3l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624237775&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&are=1&cid=",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624237775&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=1097425",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://trc.taboola.com/sg/google-authorized-buyers/1/um?gdpr=0&gdpr_consent=&ui=bcebd959-264a-4094-ab1a-50408d11cf44-tuct1195c2ef&google_error=15",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      },
+      {
+        "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=7181347545784A29A07A7A852E3C323E&RedC=c.clarity.ms&MXFR=3F29225187796F793F34359A837961AD",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      }
+    ],
+    "responses4xx5xx": [],
+    "dom": {
+      "vw": 393,
+      "vh": 727,
+      "scale": 1,
+      "zoomedOut": false,
+      "scrollW": 393,
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "el": "<div.elementor-element.elementor-element-fae947e.elementor-align-center> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-3e4b696.elementor-align-center> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -309,
+          "docRight": 702,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div#swiper-wrapper-73be235b661d30f8.swiper-wrapper>",
+          "docLeft": -1107,
+          "docRight": 1119,
+          "width": 2226,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"4 / 4\"",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18030>",
+          "docLeft": 758,
+          "docRight": 1119,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 919,
+          "docRight": 959,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 919,
+          "docRight": 959,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 920,
+          "docRight": 958,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"1 / 4\"",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18033>",
+          "docLeft": 387,
+          "docRight": 748,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 548,
+          "docRight": 588,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 548,
+          "docRight": 588,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 549,
+          "docRight": 587,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"3 / 4\"",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": -355,
+          "docRight": 6,
+          "width": 361,
+          "selfWide": false
+        }
+      ],
+      "smallText": [],
+      "smallTargets": [
+        {
+          "el": "<a#zc-decline.zcb-button.zcb-button-secondary> \"Deny\"",
+          "w": 73,
+          "h": 32
+        },
+        {
+          "el": "<a#zc-manage.zcb-button.zcb-button-primary> \"Accept\"",
+          "w": 85,
+          "h": 32
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<a> \"תנאי שימוש\"",
+          "w": 59,
+          "h": 18
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות\"",
+          "w": 77,
+          "h": 18
+        },
+        {
+          "el": "<a.dialog-close-button.dialog-lightbox-close-button> \"Close\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-name.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 139,
+          "h": 33
+        },
+        {
+          "el": "<input#form-field-phone.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 139,
+          "h": 33
+        }
+      ],
+      "images": [
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Desktop.png-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F-1536x560.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "393x143",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Tablet-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F.png",
+          "alt": "",
+          "displayed": "393x524",
+          "natural": "393x524",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/icons.png",
+          "alt": "",
+          "displayed": "361x74",
+          "natural": "393x81",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/DSC0141-1.jpg",
+          "alt": "",
+          "displayed": "393x261",
+          "natural": "393x260",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "361x361",
+          "natural": "393x221",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/mdnet.png",
+          "alt": "mdnet",
+          "displayed": "68x100",
+          "natural": "743x421",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/logo-hebrew-1-e1770638589101.png",
+          "alt": "logo-hebrew-1",
+          "displayed": "68x100",
+          "natural": "548x699",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/Be-Pharm-Logo.png",
+          "alt": "Be-Pharm-Logo",
+          "displayed": "68x100",
+          "natural": "1665x1292",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/%D7%9E%D7%9B%D7%91%D7%99-%D7%A4%D7%90%D7%A8%D7%9D-%D7%9C%D7%95%D7%92%D7%95-e1770638643393.webp",
+          "alt": "מכבי-פארם-לוגו",
+          "displayed": "68x100",
+          "natural": "1313x280",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/elementor/thumbs/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342-rft519ka88zsf76rt4i7zgfp74ochqnfjohh3c2u40.p",
+          "alt": "Good Energies B-Cure Laser Pro-110 (1)",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-desktop.jpg",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "393x272",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-mobile.jpg",
+          "alt": "",
+          "displayed": "314x492",
+          "natural": "393x614",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        }
+      ],
+      "forms": [
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        }
+      ],
+      "looseFields": [],
+      "links": 16,
+      "deadLinks": [
+        {
+          "href": "",
+          "text": "Deny",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "Accept",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "איך בי-קיור לייזר בהשוואה למכשירים אחרים בשוק?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם נדרש אמצעי בטיחות כלשהם על מנת להשתמש בבי-קיור לייזר?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם היעילות של בי-קיור לייזר הוכחה קלינית?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם הטיפול בבי-קיור לייזר בטוח לשימוש?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "#",
+          "text": "Close",
+          "target": "",
+          "visible": true
+        }
+      ],
+      "telLinks": [],
+      "waLinks": [],
+      "fixed": [
+        {
+          "el": "<div#zcb-banner.zcb-bar.zcb-banner-bottom> \"Our website uses cookies to give you the best and \"",
+          "pos": "fixed",
+          "w": 393,
+          "h": 146,
+          "top": 581,
+          "coverage": 20
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-82bb3c7.elementor-fixed> \"לפרטים נוספים ורכישה\"",
+          "pos": "fixed",
+          "w": 393,
+          "h": 44,
+          "top": 673,
+          "coverage": 6
+        },
+        {
+          "el": "<div#elementor-popup-modal-19547.dialog-widget.dialog-lightbox-widget.dialog-type-buttons> \"name phone לקבלת הטבה >>\"",
+          "pos": "fixed",
+          "w": 393,
+          "h": 727,
+          "top": 0,
+          "coverage": 100
+        },
+        {
+          "el": "<button#wpfront-scroll-top-container.show>",
+          "pos": "fixed",
+          "w": 40,
+          "h": 40,
+          "top": 622,
+          "coverage": 1
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "יותר מ-350,000 מכשירים נמכרו ברחבי העולם!",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "מה זה בי-קיור לייזר?",
+          "visible": false
+        },
+        {
+          "tag": "H2",
+          "text": "מומחים ממליצים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "סיפורי הצלחה",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "ספקים מורשים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "שאלות ותשובות",
+          "visible": true
+        }
+      ],
+      "meta": {
+        "title": "25 bcurelaser – Dec sale – בי קיור לייזר",
+        "description": null,
+        "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+        "lang": "he-IL",
+        "dir": "rtl",
+        "canonical": "https://lp.bcurelaser.co.il/bcurelaser-v2/",
+        "favicon": true,
+        "ogImage": null,
+        "h1Count": 0,
+        "iframes": [],
+        "videos": 1,
+        "autoplayVideos": 1
+      },
+      "pageHeight": 5523,
+      "screens": 7.6
+    },
+    "perf": {
+      "domContentLoaded": 2884,
+      "load": 17469,
+      "ttfb": 1028,
+      "requests": 170,
+      "transferKB": 7520,
+      "byType": {
+        "document": {
+          "count": 1,
+          "bytes": 185368
+        },
+        "stylesheet": {
+          "count": 34,
+          "bytes": 515748
+        },
+        "script": {
+          "count": 66,
+          "bytes": 4812829
+        },
+        "image": {
+          "count": 32,
+          "bytes": 1437931
+        },
+        "font": {
+          "count": 6,
+          "bytes": 188896
+        },
+        "media": {
+          "count": 1,
+          "bytes": 552911
+        },
+        "fetch": {
+          "count": 17,
+          "bytes": 6423
+        },
+        "ping": {
+          "count": 2,
+          "bytes": 42
+        },
+        "xhr": {
+          "count": 13,
+          "bytes": 4
+        }
+      },
+      "lcp": 2752,
+      "cls": 0,
+      "thirdParty": [
+        "www.googletagmanager.com",
+        "crm.zoho.com",
+        "connect.facebook.net",
+        "googleads.g.doubleclick.net",
+        "www.google.com",
+        "ad.doubleclick.net",
+        "amplify.outbrain.com",
+        "www.clarity.ms",
+        "s3.eu-central-1.amazonaws.com",
+        "cdn.pagesense.io",
+        "cdn.taboola.com",
+        "analytics.google.com",
+        "stats.g.doubleclick.net",
+        "www.facebook.com",
+        "www.googleadservices.com",
+        "wave.outbrain.com",
+        "tr.outbrain.com",
+        "scripts.clarity.ms",
+        "trc.taboola.com",
+        "pagesense-collect.zoho.com",
+        "static.zohocdn.com",
+        "cm.g.doubleclick.net",
+        "y.clarity.ms",
+        "pips.taboola.com",
+        "cds.taboola.com",
+        "trc-events.taboola.com",
+        "c.clarity.ms"
+      ],
+      "viaNode": true
+    },
+    "screenshots": [
+      "screenshots/mobile-android-fold.png",
+      "screenshots/mobile-android-full.png"
+    ]
+  },
+  {
+    "viewport": "tablet",
+    "mobile": true,
+    "status": 200,
+    "loadMs": 31815,
+    "consoleErrors": [
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Google Tag Manager container code placement set to OFF !!!"
+      },
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      }
+    ],
+    "failedRequests": [
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1993930869.1788624275&gtm=45be6921h1v9246445133za200zd9246445133xec&fmt=8",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=18&frm=0&apvc=1&auid=1993930869.1788624275&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/18020169982/?random=1788624275434&cv=11&fst=1788624275434&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921h1v9246445133za200zd9246445133xec&gcd=13l3l3l3l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=10&frm=0&apvc=0&auid=1993930869.1788624275&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/17762794865/?random=1788624275670&cv=11&fst=1788624275670&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9237125338za200zb9246445133zd9246445133xec&gcd",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=0&ae=g&auid=1993930869.1788624275&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=4&frm=0&apvc=0&ae=g&auid=1993930869.1788624275&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/969150324/?random=1788624276196&cv=11&fst=1788624276196&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6921v889460777z89170425046za20gzb9170425046zd9170425046xea&gcd=13l3l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624274943&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&are=1&cid=",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624274943&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=1307160",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://cm.g.doubleclick.net/pixel?google_nid=realize&google_hm=ZWE5YjgxMGUtNjc1MC00ZTZmLTk1NjctZDI5ZGQ0MDgzMWIxLXR1Y3QxMTk1YzMxNA&google_cm=&gdpr=0&gdpr_consent=&ui=ea9b810e-6750-4e6f-9567-d29dd40831",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      },
+      {
+        "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=88D59E8C1E1A474E8C0BE056D3564524&RedC=c.clarity.ms&MXFR=3207B62747726F88358EA1EC437261C2",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      }
+    ],
+    "responses4xx5xx": [],
+    "dom": {
+      "vw": 810,
+      "vh": 1080,
+      "scale": 1,
+      "zoomedOut": false,
+      "scrollW": 810,
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "el": "<div.elementor-element.elementor-element-fae947e.elementor-align-center> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה קצרה לחץ/י\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-3e4b696.elementor-align-center> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-widget-container> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor-button-wrapper> \"לבדיקת התאמה מהירה וחינמית לחצו כאן\"",
+          "docLeft": -101,
+          "docRight": 911,
+          "width": 1012,
+          "selfWide": true
+        },
+        {
+          "el": "<div#swiper-wrapper-fcaa9fc4cad3b7a1.swiper-wrapper>",
+          "docLeft": -1176,
+          "docRight": 1976,
+          "width": 3152,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"3 / 4\"",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18031>",
+          "docLeft": 1592,
+          "docRight": 1976,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 1764,
+          "docRight": 1804,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 1764,
+          "docRight": 1804,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 1765,
+          "docRight": 1803,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"4 / 4\"",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18030>",
+          "docLeft": 1198,
+          "docRight": 1582,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 1370,
+          "docRight": 1410,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 1370,
+          "docRight": 1410,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 1371,
+          "docRight": 1409,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"1 / 4\"",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 804,
+          "docRight": 1188,
+          "width": 384,
+          "selfWide": false
+        }
+      ],
+      "smallText": [],
+      "smallTargets": [
+        {
+          "el": "<a#zc-decline.zcb-button.zcb-button-secondary> \"Deny\"",
+          "w": 73,
+          "h": 32
+        },
+        {
+          "el": "<a#zc-manage.zcb-button.zcb-button-primary> \"Accept\"",
+          "w": 85,
+          "h": 32
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-prev> \"שקופית הבאה\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<div.elementor-swiper-button.elementor-swiper-button-next> \"שקופית קודמת\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-divur.elementor-field.elementor-size-sm.elementor-acceptance-field>",
+          "w": 13,
+          "h": 13
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות.\"",
+          "w": 98,
+          "h": 21
+        },
+        {
+          "el": "<a> \"תנאי שימוש\"",
+          "w": 70,
+          "h": 21
+        },
+        {
+          "el": "<a> \"מדיניות פרטיות\"",
+          "w": 94,
+          "h": 21
+        },
+        {
+          "el": "<a.dialog-close-button.dialog-lightbox-close-button> \"Close\"",
+          "w": 25,
+          "h": 25
+        },
+        {
+          "el": "<input#form-field-name.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 202,
+          "h": 33
+        },
+        {
+          "el": "<input#form-field-phone.elementor-field.elementor-size-xs.elementor-field-textual>",
+          "w": 202,
+          "h": 33
+        }
+      ],
+      "images": [
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Desktop.png-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "810x295",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Tablet-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F.png",
+          "alt": "",
+          "displayed": "810x1081",
+          "natural": "809x1080",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/icons.png",
+          "alt": "",
+          "displayed": "575x119",
+          "natural": "480x99",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/DSC0141-1.jpg",
+          "alt": "",
+          "displayed": "810x537",
+          "natural": "810x537",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "384x384",
+          "natural": "810x455",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/mdnet.png",
+          "alt": "mdnet",
+          "displayed": "148x100",
+          "natural": "743x421",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/logo-hebrew-1-e1770638589101.png",
+          "alt": "logo-hebrew-1",
+          "displayed": "78x100",
+          "natural": "548x699",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/Be-Pharm-Logo.png",
+          "alt": "Be-Pharm-Logo",
+          "displayed": "129x100",
+          "natural": "1665x1292",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/%D7%9E%D7%9B%D7%91%D7%99-%D7%A4%D7%90%D7%A8%D7%9D-%D7%9C%D7%95%D7%92%D7%95-e1770638643393.webp",
+          "alt": "מכבי-פארם-לוגו",
+          "displayed": "148x100",
+          "natural": "1313x280",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/elementor/thumbs/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342-rft519ka88zsf76rt4i7zgfp74ochqnfjohh3c2u40.p",
+          "alt": "Good Energies B-Cure Laser Pro-110 (1)",
+          "displayed": "0x0",
+          "natural": "0x0",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-desktop.jpg",
+          "alt": "",
+          "displayed": "680x471",
+          "natural": "810x560",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-mobile.jpg",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "800x1251",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        }
+      ],
+      "forms": [
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        }
+      ],
+      "looseFields": [],
+      "links": 16,
+      "deadLinks": [
+        {
+          "href": "",
+          "text": "Deny",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "Accept",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "איך בי-קיור לייזר בהשוואה למכשירים אחרים בשוק?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם נדרש אמצעי בטיחות כלשהם על מנת להשתמש בבי-קיור לייזר?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם היעילות של בי-קיור לייזר הוכחה קלינית?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם הטיפול בבי-קיור לייזר בטוח לשימוש?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "#",
+          "text": "Close",
+          "target": "",
+          "visible": true
+        }
+      ],
+      "telLinks": [],
+      "waLinks": [],
+      "fixed": [
+        {
+          "el": "<div#zcb-banner.zcb-bar.zcb-banner-bottom> \"Our website uses cookies to give you the best and \"",
+          "pos": "fixed",
+          "w": 810,
+          "h": 75,
+          "top": 1005,
+          "coverage": 7
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-82bb3c7.elementor-fixed> \"לפרטים נוספים ורכישה\"",
+          "pos": "fixed",
+          "w": 810,
+          "h": 46,
+          "top": 1024,
+          "coverage": 4
+        },
+        {
+          "el": "<div#elementor-popup-modal-19547.dialog-widget.dialog-lightbox-widget.dialog-type-buttons> \"name phone לקבלת הטבה >>\"",
+          "pos": "fixed",
+          "w": 810,
+          "h": 1080,
+          "top": 0,
+          "coverage": 100
+        },
+        {
+          "el": "<button#wpfront-scroll-top-container.show>",
+          "pos": "fixed",
+          "w": 40,
+          "h": 40,
+          "top": 975,
+          "coverage": 0
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "יותר מ-350,000 מכשירים נמכרו ברחבי העולם!",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "מה זה בי-קיור לייזר?",
+          "visible": false
+        },
+        {
+          "tag": "H2",
+          "text": "מומחים ממליצים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "סיפורי הצלחה",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "ספקים מורשים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "שאלות ותשובות",
+          "visible": true
+        }
+      ],
+      "meta": {
+        "title": "25 bcurelaser – Dec sale – בי קיור לייזר",
+        "description": null,
+        "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+        "lang": "he-IL",
+        "dir": "rtl",
+        "canonical": "https://lp.bcurelaser.co.il/bcurelaser-v2/",
+        "favicon": true,
+        "ogImage": null,
+        "h1Count": 0,
+        "iframes": [],
+        "videos": 1,
+        "autoplayVideos": 1
+      },
+      "pageHeight": 7536,
+      "screens": 7
+    },
+    "perf": {
+      "domContentLoaded": 2077,
+      "load": 16809,
+      "ttfb": 835,
+      "requests": 165,
+      "transferKB": 7536,
+      "byType": {
+        "document": {
+          "count": 1,
+          "bytes": 185368
+        },
+        "stylesheet": {
+          "count": 34,
+          "bytes": 515748
+        },
+        "image": {
+          "count": 31,
+          "bytes": 1471084
+        },
+        "script": {
+          "count": 64,
+          "bytes": 4796234
+        },
+        "font": {
+          "count": 6,
+          "bytes": 188896
+        },
+        "media": {
+          "count": 1,
+          "bytes": 552911
+        },
+        "fetch": {
+          "count": 16,
+          "bytes": 6414
+        },
+        "ping": {
+          "count": 2,
+          "bytes": 42
+        },
+        "xhr": {
+          "count": 13,
+          "bytes": 4
+        }
+      },
+      "lcp": 7708,
+      "cls": 0,
+      "thirdParty": [
+        "www.googletagmanager.com",
+        "crm.zoho.com",
+        "connect.facebook.net",
+        "googleads.g.doubleclick.net",
+        "www.google.com",
+        "ad.doubleclick.net",
+        "amplify.outbrain.com",
+        "www.clarity.ms",
+        "cdn.pagesense.io",
+        "cdn.taboola.com",
+        "www.facebook.com",
+        "analytics.google.com",
+        "stats.g.doubleclick.net",
+        "www.googleadservices.com",
+        "trc.taboola.com",
+        "scripts.clarity.ms",
+        "wave.outbrain.com",
+        "tr.outbrain.com",
+        "pagesense-collect.zoho.com",
+        "static.zohocdn.com",
+        "cm.g.doubleclick.net",
+        "pips.taboola.com",
+        "l.clarity.ms",
+        "cds.taboola.com",
+        "trc-events.taboola.com",
+        "c.clarity.ms"
+      ],
+      "viaNode": true
+    },
+    "screenshots": [
+      "screenshots/tablet-fold.png",
+      "screenshots/tablet-full.png"
+    ]
+  },
+  {
+    "viewport": "desktop",
+    "mobile": false,
+    "status": 200,
+    "loadMs": 18341,
+    "consoleErrors": [
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Google Tag Manager container code placement set to OFF !!!"
+      },
+      {
+        "type": "warning",
+        "text": "[GTM4WP] Data layer codes are active but GTM container must be loaded using custom coding !!!"
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: net::ERR_CONNECTION_RESET"
+      }
+    ],
+    "failedRequests": [
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=1&ae=g&auid=335006462.1788624313&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/18020169982/?random=1788624313394&cv=11&fst=1788624313394&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9246445133za200zb9170425046zd9170425046xec&gcd",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/17762794865/?random=1788624313329&cv=11&fst=1788624313329&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6921v9237125338za200zb9170425046zd9170425046xec&gcd",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://ad.doubleclick.net/ccm/s/collect?auid=335006462.1788624313&gtm=45He6921v9170425046za200zd9170425046xea&fmt=8",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=0&auid=335006462.1788624313&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%D",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=0&auid=335006462.1788624313&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7%99%",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/rmkt/collect/969150324/?random=1788624313812&cv=11&fst=1788624313812&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6921v889460777z89170425046za20gzb9170425046zd9170425046xea&gcd=13l3l",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&auid=335006462.1788624313&dt=25%20bcurelaser%20%E2%80%93%20Dec%20sale%20%E2%80%93%20%D7%91%D7%99%20%D7%A7%D7%99%D7%95%D7%A8%20%D7%9C%D7%99%D7",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624312501&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&are=1&cid=",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://analytics.google.com/g/collect?v=2&tid=G-73M11G9V36&gtm=45je6921v879530500z89170425046za20gzb9170425046zd9170425046&_p=1788624312501&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=9451719",
+        "reason": "net::ERR_ABORTED",
+        "type": "fetch"
+      },
+      {
+        "url": "https://c.bing.com/c.gif?ctsa=mr&CtsSyncId=42D7D1AFBDBE41EC9AA4A155443135FF&RedC=c.clarity.ms&MXFR=16E38B299EBD6606305B9CE29ABD6840",
+        "reason": "net::ERR_CONNECTION_RESET",
+        "type": "image"
+      }
+    ],
+    "responses4xx5xx": [],
+    "dom": {
+      "vw": 1440,
+      "vh": 900,
+      "scale": 1,
+      "zoomedOut": false,
+      "scrollW": 1440,
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "el": "<div#swiper-wrapper-75a7a4ae16c10667e.swiper-wrapper>",
+          "docLeft": -192,
+          "docRight": 3438,
+          "width": 3630,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"1 / 4\"",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18033>",
+          "docLeft": 3145,
+          "docRight": 3438,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 3271,
+          "docRight": 3311,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 3271,
+          "docRight": 3311,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 3272,
+          "docRight": 3310,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"2 / 4\"",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18032>",
+          "docLeft": 2843,
+          "docRight": 3135,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 2969,
+          "docRight": 3009,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 2969,
+          "docRight": 3009,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 2970,
+          "docRight": 3008,
+          "width": 38,
+          "selfWide": true
+        },
+        {
+          "el": "<div.elementor.elementor-12592.swiper-slide> \"3 / 4\"",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<section.elementor-section.elementor-top-section.elementor-element>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-container.elementor-column-gap-default>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-column.elementor-col-100.elementor-top-column>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-wrap.elementor-element-populated>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-element.elementor-element-8de2262.elementor-widget>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-widget-container>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-wrapper.elementor-open-lightbox>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-image-overlay>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<img.attachment-full.size-full.wp-image-18031>",
+          "docLeft": 2540,
+          "docRight": 2833,
+          "width": 293,
+          "selfWide": false
+        },
+        {
+          "el": "<div.elementor-custom-embed-play> \"נגן וידאו\"",
+          "docLeft": 2666,
+          "docRight": 2706,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<svg>",
+          "docLeft": 2666,
+          "docRight": 2706,
+          "width": 40,
+          "selfWide": false
+        },
+        {
+          "el": "<path>",
+          "docLeft": 2667,
+          "docRight": 2705,
+          "width": 38,
+          "selfWide": true
+        }
+      ],
+      "smallText": [],
+      "smallTargets": [],
+      "images": [
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Desktop.png-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F-1536x560.png",
+          "alt": "",
+          "displayed": "1440x525",
+          "natural": "1439x524",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Hero_He_Tablet-%D7%9E%D7%AA%D7%95%D7%A7%D7%9F.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "1024x1366",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/icons.png",
+          "alt": "",
+          "displayed": "550x113",
+          "natural": "480x99",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/DSC0141-1.jpg",
+          "alt": "",
+          "displayed": "744x493",
+          "natural": "911x604",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-387.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-388.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-389.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-392.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-391.png",
+          "alt": "",
+          "displayed": "75x74",
+          "natural": "76x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2023/12/Frame-390.png",
+          "alt": "",
+          "displayed": "75x75",
+          "natural": "75x75",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2025/12/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342.png",
+          "alt": "",
+          "displayed": "135x208",
+          "natural": "1105x1700",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-1.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-2.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-3.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-4.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-7.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-5.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/maxresdefault-6.jpg",
+          "alt": "",
+          "displayed": "293x293",
+          "natural": "1280x720",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/mdnet.png",
+          "alt": "mdnet",
+          "displayed": "176x100",
+          "natural": "743x421",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/logo-hebrew-1-e1770638589101.png",
+          "alt": "logo-hebrew-1",
+          "displayed": "78x100",
+          "natural": "548x699",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/Be-Pharm-Logo.png",
+          "alt": "Be-Pharm-Logo",
+          "displayed": "129x100",
+          "natural": "1665x1292",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/02/%D7%9E%D7%9B%D7%91%D7%99-%D7%A4%D7%90%D7%A8%D7%9D-%D7%9C%D7%95%D7%92%D7%95-e1770638643393.webp",
+          "alt": "מכבי-פארם-לוגו",
+          "displayed": "254x100",
+          "natural": "1313x280",
+          "loading": null,
+          "broken": false,
+          "oversized": true,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/elementor/thumbs/Good-Energies-B-Cure-Laser-Pro-110-1-e1765115803342-rft519ka88zsf76rt4i7zgfp74ochqnfjohh3c2u40.p",
+          "alt": "Good Energies B-Cure Laser Pro-110 (1)",
+          "displayed": "200x280",
+          "natural": "200x280",
+          "loading": "lazy",
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-desktop.jpg",
+          "alt": "",
+          "displayed": "680x471",
+          "natural": "1200x831",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": true
+        },
+        {
+          "src": "https://lp.bcurelaser.co.il/wp-content/uploads/2026/04/popup-mobile.jpg",
+          "alt": "",
+          "displayed": "0x0",
+          "natural": "800x1251",
+          "loading": null,
+          "broken": false,
+          "oversized": false,
+          "visible": false
+        }
+      ],
+      "forms": [
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[divur]",
+              "type": "checkbox",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        },
+        {
+          "action": null,
+          "method": "post",
+          "submit": true,
+          "fields": [
+            {
+              "name": "form_fields[name]",
+              "type": "text",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[phone]",
+              "type": "tel",
+              "hasLabel": true,
+              "required": true,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "form_fields[honey]",
+              "type": "text",
+              "hasLabel": false,
+              "required": false,
+              "autocomplete": null,
+              "inputmode": null
+            },
+            {
+              "name": "full-name-maspik-hp",
+              "type": "text",
+              "hasLabel": true,
+              "required": false,
+              "autocomplete": "off",
+              "inputmode": null
+            }
+          ]
+        }
+      ],
+      "looseFields": [],
+      "links": 16,
+      "deadLinks": [
+        {
+          "href": "",
+          "text": "Deny",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "Accept",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "איך בי-קיור לייזר בהשוואה למכשירים אחרים בשוק?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם נדרש אמצעי בטיחות כלשהם על מנת להשתמש בבי-קיור לייזר?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם היעילות של בי-קיור לייזר הוכחה קלינית?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "",
+          "text": "האם הטיפול בבי-קיור לייזר בטוח לשימוש?",
+          "target": "",
+          "visible": true
+        },
+        {
+          "href": "#",
+          "text": "Close",
+          "target": "",
+          "visible": true
+        }
+      ],
+      "telLinks": [],
+      "waLinks": [],
+      "fixed": [
+        {
+          "el": "<div#zcb-banner.zcb-bar.zcb-banner-bottom> \"Our website uses cookies to give you the best and \"",
+          "pos": "fixed",
+          "w": 1440,
+          "h": 56,
+          "top": 844,
+          "coverage": 6
+        },
+        {
+          "el": "<button#wpfront-scroll-top-container.show>",
+          "pos": "fixed",
+          "w": 40,
+          "h": 40,
+          "top": 850,
+          "coverage": 0
+        },
+        {
+          "el": "<div#elementor-popup-modal-19547.dialog-widget.dialog-lightbox-widget.dialog-type-buttons> \"name phone לקבלת הטבה >>\"",
+          "pos": "fixed",
+          "w": 1440,
+          "h": 900,
+          "top": 0,
+          "coverage": 100
+        }
+      ],
+      "headings": [
+        {
+          "tag": "H2",
+          "text": "יותר מ-350,000 מכשירים נמכרו ברחבי העולם!",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "מה זה בי-קיור לייזר?",
+          "visible": false
+        },
+        {
+          "tag": "H2",
+          "text": "מומחים ממליצים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "סיפורי הצלחה",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "ספקים מורשים",
+          "visible": true
+        },
+        {
+          "tag": "H2",
+          "text": "שאלות ותשובות",
+          "visible": true
+        }
+      ],
+      "meta": {
+        "title": "25 bcurelaser – Dec sale – בי קיור לייזר",
+        "description": null,
+        "viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+        "lang": "he-IL",
+        "dir": "rtl",
+        "canonical": "https://lp.bcurelaser.co.il/bcurelaser-v2/",
+        "favicon": true,
+        "ogImage": null,
+        "h1Count": 0,
+        "iframes": [],
+        "videos": 1,
+        "autoplayVideos": 1
+      },
+      "pageHeight": 5222,
+      "screens": 5.8
+    },
+    "perf": {
+      "domContentLoaded": 1446,
+      "load": 3337,
+      "ttfb": 409,
+      "requests": 159,
+      "transferKB": 8532,
+      "byType": {
+        "document": {
+          "count": 1,
+          "bytes": 185368
+        },
+        "stylesheet": {
+          "count": 34,
+          "bytes": 515748
+        },
+        "script": {
+          "count": 61,
+          "bytes": 5196239
+        },
+        "image": {
+          "count": 32,
+          "bytes": 2090925
+        },
+        "font": {
+          "count": 6,
+          "bytes": 188896
+        },
+        "media": {
+          "count": 1,
+          "bytes": 552911
+        },
+        "fetch": {
+          "count": 15,
+          "bytes": 6387
+        },
+        "ping": {
+          "count": 2,
+          "bytes": 42
+        },
+        "xhr": {
+          "count": 7,
+          "bytes": 0
+        }
+      },
+      "lcp": 1440,
+      "cls": 0.006,
+      "thirdParty": [
+        "www.googletagmanager.com",
+        "crm.zoho.com",
+        "connect.facebook.net",
+        "amplify.outbrain.com",
+        "www.clarity.ms",
+        "cdn.pagesense.io",
+        "cdn.taboola.com",
+        "www.google.com",
+        "ad.doubleclick.net",
+        "googleads.g.doubleclick.net",
+        "analytics.google.com",
+        "stats.g.doubleclick.net",
+        "trc.taboola.com",
+        "scripts.clarity.ms",
+        "wave.outbrain.com",
+        "tr.outbrain.com",
+        "www.googleadservices.com",
+        "pagesense-collect.zoho.com",
+        "static.zohocdn.com",
+        "t.clarity.ms",
+        "c.clarity.ms",
+        "trc-events.taboola.com"
+      ],
+      "viaNode": true
+    },
+    "screenshots": [
+      "screenshots/desktop-fold.png",
+      "screenshots/desktop-full.png"
+    ]
+  }
+]

@@ -15,8 +15,13 @@
  *   • צילום מסך מלא לכל viewport (screenshots/*.png)
  *
  * דרישות: playwright (גלובלי או מקומי) + Chromium.
- * הרצה:    node scripts/site-scan/scan.mjs <url> [--out dir]
+ * הרצה:    node scripts/site-scan/scan.mjs <url> [--out dir] [--via-node]
  * פלט:     <out>/report.md + <out>/report.json + <out>/screenshots/
+ *
+ * --via-node: כל בקשות הדפדפן עוברות דרך fetch של Node (מכבד HTTPS_PROXY עם
+ *   NODE_USE_ENV_PROXY=1). נחוץ בסביבות שבהן ה-TLS של Chromium נחסם ע"י פרוקסי
+ *   אך Node עובר. במצב זה מדדי הרשת של הדפדפן (TTFB/transferSize) אינם אמינים,
+ *   ולכן משקל/מספר בקשות נמדדים בצד Node.
  */
 
 import { mkdirSync, writeFileSync } from 'node:fs'
@@ -31,6 +36,7 @@ if (!URL_ARG) {
 }
 const outIdx = args.indexOf('--out')
 const OUT = resolve(outIdx >= 0 ? args[outIdx + 1] : 'site-scan-output')
+const VIA_NODE = args.includes('--via-node')
 mkdirSync(join(OUT, 'screenshots'), { recursive: true })
 
 const VIEWPORTS = [
@@ -212,10 +218,44 @@ const perfAudit = () => new Promise(res => {
   }), 500)
 })
 
+// ── ניתוב בקשות דרך Node (--via-node) ────────────────────────────────────────
+const HOP_HEADERS = new Set(['content-encoding', 'content-length', 'transfer-encoding', 'connection', 'keep-alive', 'alt-svc'])
+const routeViaNode = async (ctx, stats) => {
+  await ctx.route('**/*', async (route) => {
+    const req = route.request()
+    const url = req.url()
+    if (!/^https?:/i.test(url)) return route.continue()
+    const headers = { ...req.headers() }
+    for (const h of ['host', 'content-length', 'connection', 'accept-encoding']) delete headers[h]
+    const t0 = Date.now()
+    try {
+      const body = req.postDataBuffer()
+      const resp = await fetch(url, { method: req.method(), headers, body: body ?? undefined, redirect: 'manual', signal: AbortSignal.timeout(45000) })
+      const buf = Buffer.from(await resp.arrayBuffer())
+      const out = {}
+      resp.headers.forEach((v, k) => { if (!HOP_HEADERS.has(k)) out[k] = v })
+      const sc = typeof resp.headers.getSetCookie === 'function' ? resp.headers.getSetCookie() : []
+      if (sc.length) out['set-cookie'] = sc.join('\n')
+      stats.requests++
+      stats.bytes += buf.length
+      stats.byType[req.resourceType()] = stats.byType[req.resourceType()] || { count: 0, bytes: 0 }
+      stats.byType[req.resourceType()].count++
+      stats.byType[req.resourceType()].bytes += buf.length
+      if (url === URL_ARG || (req.isNavigationRequest() && req.frame() === ctx.pages()[0]?.mainFrame())) stats.ttfb = stats.ttfb ?? Date.now() - t0
+      await route.fulfill({ status: resp.status, headers: out, body: buf })
+    } catch (e) {
+      stats.failed.push({ url: url.slice(0, 200), reason: String(e?.cause?.message || e?.message || e).slice(0, 120), type: req.resourceType() })
+      await route.abort('connectionfailed').catch(() => {})
+    }
+  })
+}
+
 // ── הרצה ────────────────────────────────────────────────────────────────────
 const browser = await chromium.launch()
 for (const vp of VIEWPORTS) {
   const ctx = await browser.newContext({ ...vp.device, locale: 'he-IL', ignoreHTTPSErrors: true })
+  const nodeStats = { requests: 0, bytes: 0, byType: {}, failed: [], ttfb: null }
+  if (VIA_NODE) await routeViaNode(ctx, nodeStats)
   const page = await ctx.newPage()
   const consoleErrors = []
   const failedRequests = []
@@ -248,6 +288,11 @@ for (const vp of VIEWPORTS) {
 
   const dom = await page.evaluate(domAudit, vp.mobile)
   const perf = await page.evaluate(perfAudit)
+  if (VIA_NODE) {
+    // הדפדפן לא רואה את הרשת האמיתית — מחליפים במדידות מצד Node
+    Object.assign(perf, { viaNode: true, requests: nodeStats.requests, transferKB: Math.round(nodeStats.bytes / 1024), byType: nodeStats.byType, ttfb: nodeStats.ttfb ?? perf.ttfb })
+    for (const f of nodeStats.failed) if (!failedRequests.some(x => x.url === f.url)) failedRequests.push(f)
+  }
 
   // צילום above-the-fold + מלא
   const shotAtf = join(OUT, 'screenshots', `${vp.name}-fold.png`)
@@ -271,7 +316,7 @@ for (const s of summary) {
   if (s.error) { md.push(`❌ טעינה נכשלה: ${s.error}`, ''); continue }
   const d = s.dom, p = s.perf
   md.push(`- סטטוס: ${s.status} · טעינה: ${s.loadMs}ms · TTFB ${p.ttfb}ms · LCP ${p.lcp ?? '—'}ms · CLS ${p.cls}`)
-  md.push(`- משקל: ${p.transferKB}KB ב-${p.requests} בקשות · צד-שלישי: ${p.thirdParty.join(', ') || '—'}`)
+  md.push(`- משקל: ${p.transferKB}KB ב-${p.requests} בקשות${p.viaNode ? ' (נמדד בצד Node, לא דחוס)' : ''} · צד-שלישי: ${p.thirdParty.join(', ') || '—'}`)
   md.push(`- viewport: ${d.vw}px · רוחב תוכן: ${d.scrollW}px · **חריגה אופקית: ${d.horizontalOverflow ? '⚠️ כן' : 'לא'}**${d.zoomedOut ? ` · **⚠️ הדף נטען מוקטן (zoom ${Math.round(d.scale * 100)}%) — הטקסט נראה זעיר במובייל**` : ''} · גובה דף: ${d.pageHeight}px (${d.screens} מסכים)`)
   md.push(`- meta viewport: \`${d.meta.viewport}\` · lang=${d.meta.lang} dir=${d.meta.dir} · H1: ${d.meta.h1Count}`)
   if (d.overflowing.length) {
