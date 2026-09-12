@@ -1,0 +1,294 @@
+[
+  {
+    "page": "today",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "matches",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "analysis",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "tracking",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "settings",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "health",
+    "width": 320,
+    "horizontalScroll": false,
+    "scrollWidth": 320,
+    "innerWidth": 320,
+    "bodyScroll": 320,
+    "smallTargets": []
+  },
+  {
+    "page": "keyboard",
+    "width": 320,
+    "focusSequence": [
+      "a:PILOT 30↗",
+      "button:הרצת סריקה עכשיו ←",
+      "button:התחייבות לטופס (סי",
+      "a:פתיחת ניתוח הבחירה",
+      "button:אין בחירות מתאימות",
+      "a:◫היום",
+      "a:◎משחקים",
+      "a:▥מעקב",
+      "a:⚙הגדרות",
+      "a:♥מערכת",
+      "body:PILOT 30↗המרחב האי",
+      "a:PILOT 30↗"
+    ]
+  },
+  {
+    "page": "today",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "matches",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "analysis",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "tracking",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "settings",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "health",
+    "width": 390,
+    "horizontalScroll": false,
+    "scrollWidth": 390,
+    "innerWidth": 390,
+    "bodyScroll": 390,
+    "smallTargets": []
+  },
+  {
+    "page": "keyboard",
+    "width": 390,
+    "focusSequence": [
+      "a:PILOT 30↗",
+      "button:הרצת סריקה עכשיו ←",
+      "button:התחייבות לטופס (סי",
+      "a:פתיחת ניתוח הבחירה",
+      "button:אין בחירות מתאימות",
+      "a:◫היום",
+      "a:◎משחקים",
+      "a:▥מעקב",
+      "a:⚙הגדרות",
+      "a:♥מערכת",
+      "body:PILOT 30↗המרחב האי",
+      "a:PILOT 30↗"
+    ]
+  },
+  {
+    "page": "today",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "matches",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "analysis",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "tracking",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "settings",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "health",
+    "width": 768,
+    "horizontalScroll": false,
+    "scrollWidth": 768,
+    "innerWidth": 768,
+    "bodyScroll": 768,
+    "smallTargets": []
+  },
+  {
+    "page": "keyboard",
+    "width": 768,
+    "focusSequence": [
+      "a:PILOT 30↗",
+      "button:הרצת סריקה עכשיו ←",
+      "button:התחייבות לטופס (סי",
+      "a:פתיחת ניתוח הבחירה",
+      "button:אין בחירות מתאימות",
+      "a:◫היום",
+      "a:◎משחקים",
+      "a:▥מעקב",
+      "a:⚙הגדרות",
+      "a:♥מערכת",
+      "body:PILOT 30↗המרחב האי",
+      "a:PILOT 30↗"
+    ]
+  },
+  {
+    "page": "today",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "matches",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "analysis",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "tracking",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "settings",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "health",
+    "width": 1440,
+    "horizontalScroll": false,
+    "scrollWidth": 1440,
+    "innerWidth": 1440,
+    "bodyScroll": 1440,
+    "smallTargets": []
+  },
+  {
+    "page": "keyboard",
+    "width": 1440,
+    "focusSequence": [
+      "a:PILOT 30↗",
+      "a:◫היום שלי",
+      "a:◎משחקים וניתוח",
+      "a:▥מעקב הפיילוט",
+      "a:⚙הגדרות",
+      "a:♥בריאות המערכת",
+      "button:הרצת סריקה עכשיו ←",
+      "button:התחייבות לטופס (סי",
+      "a:פתיחת ניתוח הבחירה",
+      "button:אין בחירות מתאימות",
+      "body:PILOT 30↗המרחב האי",
+      "a:PILOT 30↗"
+    ]
+  },
+  {
+    "page": "commit-flow",
+    "committedBadge": "ממתין לתוצאה"
+  }
+]

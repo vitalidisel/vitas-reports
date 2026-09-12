@@ -1,0 +1,69 @@
+name: PILOT30 cron (external scheduler)
+
+# Server-side scheduler for PILOT 30 (spec §10). Vercel's own cron has been unreliable for this project
+# (see vitas-cron.yml), so GitHub Actions calls the endpoints with the shared CRON_SECRET.
+# Schedules are UTC. Israel is UTC+3 in summer / UTC+2 in winter, so "09:00 Israel" is scheduled at both
+# 06:00 and 07:00 UTC; the endpoint is idempotent (job lock + per-day run records) so the extra call is harmless.
+#
+# Jobs (all GET, Authorization: Bearer CRON_SECRET):
+#   discover  — 09:00 Israel: today's fixtures for the pilot leagues + league history cache
+#   odds      — before analysis / before commitment: quotes → analysis → candidate ticket (auto-commit only for paper + auto-sim)
+#   lineups   — spot checks around 75/45 minutes before kickoff of the candidate fixtures
+#   results   — ~3h after kickoffs, with retries for unfinished fixtures
+#   reconcile — next morning: open tickets, result corrections, pending_review list
+#
+# Setup: repository secret CRON_SECRET (same value as the Vercel env var). Optional: PILOT30_BASE_URL variable.
+
+on:
+  schedule:
+    - cron: '3 6,7 * * *'          # discover (09:00 Israel, summer/winter)
+    - cron: '23 6,7,9,11,13,15 * * *'  # odds/analysis refresh (morning + before evening kickoffs)
+    - cron: '13,43 14-21 * * *'    # lineups spot checks during kickoff hours
+    - cron: '33 17-23,0-1 * * *'   # results / settlement
+    - cron: '53 4,5 * * *'         # reconcile (07:00 Israel)
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Which PILOT30 cron to run'
+        required: true
+        default: 'odds'
+        type: choice
+        options: [discover, odds, lineups, results, reconcile]
+
+concurrency:
+  group: pilot30-cron-${{ github.event.schedule || github.event.inputs.target }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve endpoint
+        id: t
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            case "${{ github.event.schedule }}" in
+              '3 6,7 * * *')                  echo 'path=discover'  >> "$GITHUB_OUTPUT" ;;
+              '23 6,7,9,11,13,15 * * *')      echo 'path=odds'      >> "$GITHUB_OUTPUT" ;;
+              '13,43 14-21 * * *')            echo 'path=lineups'   >> "$GITHUB_OUTPUT" ;;
+              '33 17-23,0-1 * * *')           echo 'path=results'   >> "$GITHUB_OUTPUT" ;;
+              '53 4,5 * * *')                 echo 'path=reconcile' >> "$GITHUB_OUTPUT" ;;
+              *)                              echo 'path=results'   >> "$GITHUB_OUTPUT" ;;
+            esac
+          else
+            echo 'path=${{ github.event.inputs.target }}' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Call endpoint
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+          BASE_URL: ${{ vars.PILOT30_BASE_URL || 'https://reports.vitas.co.il' }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then echo "::error::missing repository secret CRON_SECRET"; exit 1; fi
+          url="$BASE_URL/api/pilot30/cron/${{ steps.t.outputs.path }}"
+          for attempt in 1 2 3; do
+            code=$(curl -sS -o /tmp/out.json -w '%{http_code}' --max-time 300 -H "Authorization: Bearer $CRON_SECRET" "$url" || echo 000)
+            echo "attempt $attempt → HTTP $code"; cat /tmp/out.json | head -c 2000; echo
+            if [ "$code" = "200" ]; then exit 0; fi
+            sleep $((attempt * 20))
+          done
+          echo "::error::PILOT30 cron ${{ steps.t.outputs.path }} failed"; exit 1

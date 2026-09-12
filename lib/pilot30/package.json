@@ -1,0 +1,5 @@
+{
+  "type": "module",
+  "private": true,
+  "description": "PILOT30 core (ESM). This package.json only tells Node to treat the .js files here as ES modules so `node --test` can import them directly; Next.js ignores it."
+}

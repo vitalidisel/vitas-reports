@@ -1,0 +1,23 @@
+{
+  "get": "fixtures",
+  "parameters": { "league": "39", "season": "2026", "date": "2026-09-12", "timezone": "Asia/Jerusalem" },
+  "errors": [],
+  "results": 2,
+  "paging": { "current": 1, "total": 1 },
+  "response": [
+    {
+      "fixture": { "id": 1234567, "referee": null, "timezone": "Asia/Jerusalem", "date": "2026-09-12T17:00:00+03:00", "timestamp": 1789221600, "status": { "long": "Not Started", "short": "NS", "elapsed": null } },
+      "league": { "id": 39, "name": "Premier League", "country": "England", "season": 2026, "round": "Regular Season - 4" },
+      "teams": { "home": { "id": 33, "name": "Manchester United", "winner": null }, "away": { "id": 40, "name": "Liverpool", "winner": null } },
+      "goals": { "home": null, "away": null },
+      "score": { "halftime": { "home": null, "away": null }, "fulltime": { "home": null, "away": null }, "extratime": { "home": null, "away": null }, "penalty": { "home": null, "away": null } }
+    },
+    {
+      "fixture": { "id": 1234500, "referee": "M. Oliver", "timezone": "Asia/Jerusalem", "date": "2026-09-05T22:00:00+03:00", "timestamp": 1788634800, "status": { "long": "Match Finished", "short": "AET", "elapsed": 120 } },
+      "league": { "id": 39, "name": "Premier League", "country": "England", "season": 2026, "round": "Regular Season - 3" },
+      "teams": { "home": { "id": 42, "name": "Arsenal", "winner": true }, "away": { "id": 49, "name": "Chelsea", "winner": false } },
+      "goals": { "home": 2, "away": 1 },
+      "score": { "halftime": { "home": 0, "away": 1 }, "fulltime": { "home": 1, "away": 1 }, "extratime": { "home": 1, "away": 0 }, "penalty": { "home": null, "away": null } }
+    }
+  ]
+}
